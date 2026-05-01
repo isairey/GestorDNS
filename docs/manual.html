@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneClickDNS - Manual de Usuario</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2962FF;
+        }
+        h1 {
+            border-bottom: 2px solid #2962FF;
+            padding-bottom: 10px;
+        }
+        .screenshot {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+        }
+        .note {
+            background-color: #E3F2FD;
+            padding: 15px;
+            border-left: 4px solid #2962FF;
+            margin: 20px 0;
+        }
+        code {
+            background: #F5F5F5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1><img src="assets/icons/icon.ico" width="32" alt=""> OneClickDNS - Manual de Usuario</h1>
+
+    <h2>📌 Introducción</h2>
+    <p>OneClickDNS es una herramienta para Windows que permite cambiar tus servidores DNS con un solo clic, mejorando tu seguridad y privacidad en internet.</p>
+
+    <div class="note">
+        <strong>Requisitos:</strong> Windows 10/11 (64-bit) con permisos de administrador.
+    </div>
+
+    <h2>🖥️ Interfaz Principal</h2>
+    <img src="../assets/screenshots/preview.png" alt="Interfaz de OneClickDNS" class="screenshot">
+
+    <h3>1. Selección de adaptador</h3>
+    <p>Elige el adaptador de red (Wi-Fi/Ethernet) donde deseas cambiar los DNS.</p>
+
+    <h3>2. Proveedores DNS preconfigurados</h3>
+    <ul>
+        <li><strong>AdGuard:</strong> Bloqueo de anuncios y malware</li>
+        <li><strong>CleanBrowsing:</strong> Filtro familiar</li>
+        <li><strong>OpenDNS:</strong> Protección básica</li>
+        <li><strong>Yandex:</strong> Protección familiar</li>
+        <li><strong>Neustar:</strong>  Protección familiar</li>
+    </ul>
+
+    <h2>🛠️ Funciones Clave</h2>
+
+    <h3>🔹 Aplicar DNS</h3>
+    <ol>
+        <li>Selecciona un adaptador</li>
+        <li>Elige un proveedor DNS</li>
+        <li>Haz clic en <strong>"Aplicar DNS"</strong></li>
+    </ol>
+
+    <h3>🔹 Restablecer a DHCP</h3>
+    <p>Vuelve a la configuración automática de tu ISP:</p>
+    <img src="../assets/screenshots/reset.png" alt="Botón de reset" class="screenshot">
+
+    <h2>⚙️ Registro de Actividad</h2>
+    <p>La aplicación guarda un log con todos los cambios en:</p>
+    <code>%APPDATA%\OneClickDNS\dns_changes.log</code>
+
+    <div class="note">
+        <strong>Nota de seguridad:</strong> Los cambios requieren permisos de administrador porque modifican configuraciones de sistema.
+    </div>
+
+    <h2>❓ Preguntas Frecuentes</h2>
+
+    <h3>¿Por qué no aparecen los adaptadores?</h3>
+    <p>Prueba:</p>
+    <ul>
+        <li>Ejecutar como administrador</li>
+        <li>Usar el botón <strong>"Refrescar adaptadores"</strong></li>
+    </ul>
+
+    <h3>¿Cómo verificar que los DNS cambiaron?</h3>
+    <p>Abre Command Prompt y ejecuta:</p>
+    <code>nslookup google.com</code>
+
+    <h2>📞 Soporte</h2>
+    <p>Reporta problemas en: <br>
+    <a href="https://github.com/gfrodriguez/OneClickDNS/issues" target="_blank">github.com/gfrodriguez/OneClickDNS/issues</a></p>
+
+    <footer>
+        <p>© 2025 OneClickDNS - Licencia MIT</p>
+    </footer>
+</body>
+</html>
